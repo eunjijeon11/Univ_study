@@ -17,6 +17,7 @@ Please use issue tab for any questions!
 - [pytorch](https://github.com/eunjijeon11/Univ_study/blob/master/cheat_sheets/pytorch.ipynb)
 
 2. Study
+- [HeadFirst Design Pattern](https://github.com/eunjijeon11/Univ_study/tree/master/study/design_pattern)
 - [CS_APP](https://github.com/eunjijeon11/Univ_study/tree/master/study/CS_APP)
 - [Backend](https://github.com/eunjijeon11/Univ_study/tree/master/study/backend)
 - [Hugging Face](https://github.com/eunjijeon11/Univ_study/tree/master/study/data_analysis/huggingFaceTutorial)
