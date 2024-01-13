@@ -1,4 +1,6 @@
 # Observer 패턴
+![image](https://github.com/eunjijeon11/Univ_study/assets/61264183/ec7b43d9-d18e-4f70-a43a-de5449d325f3)
+
 옵저버 패턴은 Observer들이 관찰하고 있는 subject의 상태가 변할 때 각 Observer에게 이를 알리는 행동패턴이다.  
 대상(subject)와 Observer 클래스 인스턴스로 구성된다.
 - subject는 상태를 저장하고 제어한다.
@@ -8,6 +10,8 @@
 - 일대다 관계가 성립한다.
 - 여러 객체가 동일한 데이터를 제어하는 것보다 더 깔끔한 객체지향 디자인을 만들 수 있다.
 ## 구조
+![image](https://github.com/eunjijeon11/Univ_study/assets/61264183/e0195761-b108-4091-bda4-fc48c16ba0cf)
+
 1. Subject (interface)
 - register, remove, notify에 대한 구조 정의
 2. Observer (interface)
@@ -110,6 +114,10 @@ public interface Observer {
 }
 
 public class ConditionDisplay implements Observer, DisplayElement {
+  private float temperature;
+  private float humidity;
+  private float pressure;
+
   private WeatherData weatherData;
   public ConditionDisplay(WeatherData weatherData) {
     this.weatherData = weatherData;
@@ -117,17 +125,17 @@ public class ConditionDisplay implements Observer, DisplayElement {
   }
 
   @Override
-  public void display(float temperature, float humidity, float pressure) {
+  public void display() {
     //...
   }
 
   @Override
   public void update() {
-    int temperature = weatherData.getTemperature();
-    int humidity = weatherData.getHumidity();
-    int pressure = weatherData.getPressure();
+    this.temperature = weatherData.getTemperature();
+    this.humidity = weatherData.getHumidity();
+    this.pressure = weatherData.getPressure();
 
-    display(temperature, humidity, pressure);
+    display();
   }
 }
 ```
