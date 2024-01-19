@@ -98,9 +98,11 @@ public ChicagoStyleCheesePizze extends Pizza {
 **The Creator Classes**
 - abstract creator class: PizzaStore
 - concrete creator classes: NYPizzaStore, ChicagoPizzaStore...
+
 **The Product Classes**
 - abstract product class: Pizza
 - concrete product classes: NYStyleCheesePizza, ChicagoStyleClamPizza...
+
 ![image](https://github.com/eunjijeon11/Univ_study/assets/61264183/f936c339-0253-47be-a376-d6186a755973)
 
 
